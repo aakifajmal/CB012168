@@ -552,6 +552,7 @@ th, td{
 .select2-container .select2-selection--single {
   width: 60%;
 }
+}
 
 @media screen and (max-width:1200px) and (min-width:750px) {
   .detailscontainer {
@@ -650,4 +651,4 @@ footer{
   margin: 0;
   padding: 5px;
 }
-
+}
