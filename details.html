@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./tickets.css">
+    <link rel="stylesheet" href="./build/css/demo.css">
+    <link rel="stylesheet" href="./build/css/intlTelInput.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
+    <title>Details</title>
+    
+</head>
+<body>
+    <header>
+        <div class="cover">
+            <img src="./Images/Cover.png" alt="cover page with a pic of a beachshore">
+        </div>
+        <h1 id="head">Book Tickets</h1>
+        <div class="navtitles">
+          <ul>
+           <a href="./tickets.html"><li >Book Tickets ></li></a> 
+            <li id="navselected">Details ></li>
+            <li>Payment ></li>
+            <li>Confirmation </li>
+          </ul>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <div class="rightcontainer">
+          <form id="myForm">
+          <div class="detailscontainer">
+            <h2>Enter your details</h2>
+            <div></div>
+
+              <div class="inpfields">
+
+                <div class="input-control">
+                  <label for="FullName">Full Name</label>
+                  <p>Same as on your ID</p>
+                  <input type="text" name="FullName" id="FullName" required placeholder="Full Name">
+                  <div class="error"></div>
+                </div>
+
+                <div class="input-control">
+                  <label for="Email">Email</label>
+                  <p>We'll send your tickets here</p>
+                  <input type="text" name="Email" id="Email" required placeholder="Email">
+                  <div class="error"></div>
+                </div>
+
+                <div class="input-control">
+                  <label for="Gender">Gender</label>
+                  <br>
+                  <select name="Gender" id="Gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                  </select>
+                </div>
+
+              </div>
+              
+              <div class="inpfields">
+
+                <div class="input-control">
+                  <label for="MobileNum">Mobile Number</label>
+                  <p>We may reach out for booking updates here over SMS/WhatsApp</p>
+                  <input type="text" name="" id="flag">
+                  <input type="number" name="MobileNum" id="MobileNum" required placeholder="Mobile number">
+                  <div class="error"></div>
+                </div>
+
+                <div class="input-control">
+                  <label for="ConfirmEmail">Confirm Email</label>
+                  <p>Just to ensure we've got this right</p>
+                  <input type="text" name="ConfirmEmail" id="ConfirmEmail" required placeholder="Confirm Email">
+                  <div class="error"></div>
+                </div>
+
+
+              </div>
+            </div>
+
+            <div class="btncont">
+              <a href="./payment.html" id="continuebtna" ><button id="continuebtn" disabled>Continue with purchase</button></a> 
+            </div>
+            
+          </form>
+          </div>
+    
+          <div class="leftcontainer">
+            <!-- Summary Table -->
+            <table id="Summarytable">
+              <tr>
+                <td>Date</td>
+                <td id="currentDate"></td>
+              </tr>
+              <tr>
+                <td>Time</td>
+                <td>07.00 am to 08.00 am</td>
+              </tr>
+              <tr>
+                <td>Duration</td>
+                <td>1 hrs ( 01 Normal : 00 Peak)</td>
+              </tr>
+              <tr>
+                <td>Tickets</td>
+                <td>Charges</td>
+              </tr>
+              <tr>
+                <td>1 Foreigner Adult</td>
+                <td>$10</td>
+              </tr>
+              <tr>
+                <td>Total Payable</td>
+                <td>$10</td>
+              </tr>
+            </table>
+    
+          </div>
+    
+        </div>
+        <script src="./build/js/intlTelInput.js"></script>
+        <script>
+          var input = document.querySelector("#flag");
+          window.intlTelInput(input,{});
+        </script>
+        <script src="./details.js"></script>
+
+        <footer>
+          <div class="footer-container">
+              <div id="footer-logo">
+                  <a href="./index.html">
+                      <img src="./Images/Logo.png" alt="logo">
+                  </a>
+              </div>
+              <div class="footer-row">
+                  <div class="footer-col">
+                      <h3>Turtle Tracks</h3>
+                      <ul>
+                          <a href="./index.html"><li>Home</li></a>
+                          <a href="./categories.html"><li>Categories</li></a>
+                          <a href="./threats.html"><li>Threats</li></a>
+                          <a href="./donations.html"><li>Donations</li></a>
+                          <a href="./shop.html"><li>Shop</li></a>
+                      </ul>
+                  </div>
+                  <div class="footer-col">
+                      <h3>Locations</h3>
+                      <ul>
+                          <a href="./hikkaduwa.html"><li>Hikkaduwa</li></a>
+                          <a href="./kosgoda.html"><li>Kosgoda</li></a>
+                          <a href="./benthota.html"><li>Benthota</li></a>
+                      </ul>
+                  </div>
+                  <div class="footer-col">
+                      <h3>Follow us</h3>
+                      <div class="social-links">
+                              <a href=""><img src="./Icons/insta 2.png" alt="instagram icon"></a>
+                              <a href=""><img src="./Icons/facebook 2.png" alt="facebook icon"></a>
+                              <a href=""><img src="./Icons/twitter 2.png" alt="twitter icon"></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <a href="#logo">
+              <img src="./up.png" alt="" id="gototop">
+          </a>
+      </footer>
+</body>
+</html>
