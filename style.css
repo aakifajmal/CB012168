@@ -511,7 +511,28 @@ header{
     font-family: 'Montserrat', sans-serif;
 
 }
+#booknow{
+    background-color: rgb(171, 210, 251);
+    height: 5em;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+}
 
+#booknowbtn{
+    height: 2em;
+    width: 6em;
+    font-size: 1.5em;
+    border-radius: .5em;
+    background-color: #2787e7;
+    color: white;
+    transition: .25s;
+    cursor: pointer;
+  }
+#booknowbtn:hover{
+    background-color: #5ca1e6;
+    color: white;
+  }
 /* ------------------------------------------------------------------------------------------------------------- */
 
 /* Category page */
