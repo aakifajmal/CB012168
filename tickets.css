@@ -107,7 +107,7 @@ h2{
   width: 40%;
 }
 
-#tabletopic, #totalPayableCharge{
+.tabletopic, #totalPayableCharge{
   background-color: #ccc;
 }
 
@@ -242,70 +242,6 @@ th, td{
   color: #666;
   cursor: not-allowed;
 }
-
-
-
-/* .calendar {
-    width: 300px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    margin: 1em;
-  }
-  
-  .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #333;
-    color: #fff;
-    padding: 8px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-  }
-  
-  #monthYear {
-    font-size: 18px;
-  }
-  
-  .days {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-gap: 1px;
-    padding: 8px;
-  }
-  
-  .days div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30px;
-    font-size: 14px;
-    cursor: pointer;
-  }
-  
-  .days div:hover {
-    background-color: #f2f2f2;
-  }
-  
-  .days-header {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    padding: 8px;
-    font-weight: bold;
-    border-bottom: 1px solid #ddd;
-}
-
-.days-header div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30px;
-}
-  .selected {
-    background-color: #333;
-    color: #fff;
-  } */
   
   .calendar {
     max-width: 300px;
@@ -515,11 +451,11 @@ th, td{
     font-weight: 700;
     color: black;
     display: block;
-    
+    transition: all 0.3s ease-in-out;
 
 }
 
-.footer-row ul a :hover{
+.footer-row ul li a:hover{
     color: white;
     padding-left: 5%;
 }
