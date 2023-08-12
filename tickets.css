@@ -236,6 +236,15 @@ th, td{
   margin-left: 0.5em;
 }
 
+.navtitles ul a{
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  display: block;
+  transition: all 0.3s ease-in-out;
+
+}
 
 #continuebtn:disabled{
   background-color: #ccc; 
