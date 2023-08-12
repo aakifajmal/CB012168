@@ -428,9 +428,11 @@ function getTotalCharges() {
 
 
 
+const timerange = document.getElementById("selectedTime");
 const btncont = document.getElementById("continuebtn");
 btncont.addEventListener("click", ()=>{
     let summaryTable = document.getElementById("Summarytable");
     localStorage.setItem("summaryTable" , summaryTable.innerHTML);
+    localStorage.setItem("time" , timerange.innerText)
     window.location.href = "details.html"
   });
