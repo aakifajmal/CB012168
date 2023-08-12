@@ -20,7 +20,7 @@
     font-family: Montserrat;
 }
 body{
-  background-color: #87c2e1;
+  background-color: #d9eaf1;
 }
 
 
@@ -29,7 +29,8 @@ body{
     top: 8%;
     left: 35%;
     font-size: 4rem;
-    color: #80f7c3;
+    color: #ffffff;
+    font-weight: bold;
 }
 
 img{
@@ -226,7 +227,9 @@ th, td{
 #navselected{
   color: #000000;
   font-weight: bold;
-  text-decoration: underline;
+  background-color: white;
+  padding: .2em;
+  border-radius: .5em;
 }
 
 .navtitles li{
