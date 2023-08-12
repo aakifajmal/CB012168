@@ -431,5 +431,6 @@ function getTotalCharges() {
 const btncont = document.getElementById("continuebtn");
 btncont.addEventListener("click", ()=>{
     let summaryTable = document.getElementById("Summarytable");
-    localStorage.setItem("summaryTable" , summaryTable.innerHTML)
+    localStorage.setItem("summaryTable" , summaryTable.innerHTML);
+    window.location.href = "details.html"
   });
