@@ -134,6 +134,6 @@ const validateForm = () => {
 
 Contbtn.addEventListener("click", (e) => {
     e.preventDefault();
-    window.location.href = './confirmation.html';
+    window.location.href = 'confirmation.html';
 });
 

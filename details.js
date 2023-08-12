@@ -220,7 +220,7 @@ Contbtn.addEventListener("click", () => {
     // partialTable.appendChild(tbody);
     
     localStorage.setItem("newTable", tbody.innerHTML);
-    
+    window.location.href = "payment.html"
   });
 
 
