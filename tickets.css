@@ -29,8 +29,11 @@ body{
     top: 8%;
     left: 35%;
     font-size: 4rem;
-    color: #ffffff;
+    color: #000000;
     font-weight: bold;
+    background-color: white;
+    padding: .2em;
+    border-radius: 1rem;
 }
 
 img{
