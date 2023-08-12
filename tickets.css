@@ -20,7 +20,7 @@
     font-family: Montserrat;
 }
 body{
-  background-color: #aedbf3;
+  background-color: #87c2e1;
 }
 
 
@@ -29,7 +29,7 @@ body{
     top: 8%;
     left: 35%;
     font-size: 4rem;
-    color: #fff;
+    color: #80f7c3;
 }
 
 img{
@@ -226,12 +226,13 @@ th, td{
 #navselected{
   color: #000000;
   font-weight: bold;
+  text-decoration: underline;
 }
 
 .navtitles li{
   font-family: poppins;
   display: inline-block;
-  color: #ffffff;
+  color: #000000;
   font-weight: bold;
   margin-left: 0.5em;
 }
@@ -240,7 +241,7 @@ th, td{
   text-transform: capitalize;
   text-decoration: none;
   font-weight: 700;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   display: block;
   transition: all 0.3s ease-in-out;
 
