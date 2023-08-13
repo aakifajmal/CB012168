@@ -6,6 +6,14 @@ document.addEventListener("DOMContentLoaded", function () {
   localStorage.setItem("ticketcountForeigner Adult", "1");
   getTotalCharges();
 
+  const todayDate = document.getElementById("currentDate");
+  const tdate = new Date();
+  todayDate.innerText = tdate.toLocaleDateString();
+
+  const btncont = document.getElementById("continuebtn");
+  btncont.disabled = true;
+
+  //Calendar code
   const currentDate = new Date();
   let selectedDate = null;
   let currentMonth = currentDate.getMonth();
@@ -59,15 +67,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     calendarDaysElement.appendChild(dayElement);
-      // Automatically select the current date on page load
-      const currentDate = new Date();
-      if (
-        currentDate.getDate() === i &&
-        currentDate.getMonth() === month &&
-        currentDate.getFullYear() === year
-      ) {
-        dayElement.click();
-      }
     }
   }
 
@@ -87,6 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
       year: year
     };
     localStorage.setItem("selectedDate", JSON.stringify(selectedDateObj));
+    btncont.disabled = false;
   }
 
   function displaySelectedDate() {
@@ -226,14 +226,6 @@ function updateDurationRow(totalHours, peakHours) {
 
 
   //Tickets buttons and table
-  window.addEventListener("load", init);
-
-  function init(){
-    const todayDate = document.getElementById("currentDate");
-    const tdate = new Date();
-    todayDate.innerText = tdate.toLocaleDateString();
-  }
-
   let paragraphID;
 
   const STable = document.getElementById("Summarytable");
