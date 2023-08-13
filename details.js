@@ -207,17 +207,13 @@ Contbtn.addEventListener("click", (e) => {
 Contbtn.addEventListener("click", () => {
     let summaryTable = document.getElementById("Summarytable");
     let rows = summaryTable.getElementsByTagName("tr");
-    
-    // let partialTable = document.createElement("table");
     let tbody = document.createElement("tbody");
     
-    for (let i = 3; i < rows.length; i++) { // Start from the 4th row
+    for (let i = 3; i < rows.length; i++) { 
       let newRow = document.createElement("tr");
       newRow.innerHTML = rows[i].innerHTML;
       tbody.appendChild(newRow);
     }
-    
-    // partialTable.appendChild(tbody);
     
     localStorage.setItem("newTable", tbody.innerHTML);
     window.location.href = "payment.html"
